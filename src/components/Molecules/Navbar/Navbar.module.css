@@ -1,0 +1,46 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+  background-color: black;
+  align-items: center;
+}
+.icon_person {
+  margin-right: 0.8rem;
+}
+
+.left_nav {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+}
+.right_nav {
+  display: flex;
+  gap: 2rem;
+  color: white;
+  align-items: center;
+}
+.btn_board button {
+  outline: none;
+  border: none;
+  color: rgb(87, 101, 126);
+}
+.btn_board {
+  border: none;
+  padding: 0.3rem;
+  background-color: white;
+}
+.board_icon {
+  color: rgb(87, 101, 126);
+}
+
+.share_btn {
+  border: 1px solid red;
+  margin-top: 4px;
+  padding: 0.3rem;
+  background-color: white;
+}
+.person_icon {
+  color: rgb(87, 101, 126);
+}
