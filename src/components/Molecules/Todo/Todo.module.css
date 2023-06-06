@@ -1,0 +1,15 @@
+.todo{
+    width:19rem;
+    height: 10vh;
+    background-color: aqua;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    border-radius: 10px;
+}
+
+.list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background-color: blueviolet; */
+}
