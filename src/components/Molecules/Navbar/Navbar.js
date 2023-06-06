@@ -4,45 +4,43 @@ import { AiOutlineStar } from "react-icons/ai";
 import { CiViewBoard } from "react-icons/ci";
 import PeopleAltIcon from "@mui/icons-material/PeopleAlt";
 import { GoRocket } from "react-icons/go";
-import { MdFilterList } from "react-icons/md";
+import { BiFilter } from "react-icons/bi";
 import { BsPersonFillAdd } from "react-icons/bs";
-import { TfiLayoutMenuSeparated } from "react-icons/tfi";
-import { IoIosArrowForward } from "react-icons/io";
+import MoreHorizIcon from "@mui/icons-material/MoreHoriz";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import { LuBatteryCharging } from "react-icons/lu";
+import BoltIcon from "@mui/icons-material/Bolt";
+import { SlArrowDown } from "react-icons/sl";
 export default function Navbar() {
   return (
     <div className={style.wrapper}>
       <div className={style.left_nav}>
-        <nav>
-          <IoIosArrowForward />
-        </nav>
-        <nav>Card Name</nav>
-        <nav>
-          <AiOutlineStar/>
-        </nav>
-        <nav>
-          <PeopleAltIcon className={style.icon_person}/>
+        <nav className={style.heading}>Home Task Management</nav>
+        <div className={style.star_icon}>
+          <AiOutlineStar className={style.star} />
+        </div>
+        <div className={style.people_icon}>
+          <PeopleAltIcon className={style.icon_person} />
           <span>Workspace visible</span>
-        </nav>
-        <nav className={style.btn_board}>
+        </div>
+        <div className={style.btn_board}>
           <CiViewBoard className={style.board_icon} />
           <button>Board</button>
-        </nav>
+        </div>
+        <SlArrowDown className={style.down_arrow} />
       </div>
       <div className={style.right_nav}>
-        <nav>
+        <div className={style.power_ups}>
           <GoRocket />
           <span>Power_Ups</span>
-        </nav>
-        <nav>
-          <LuBatteryCharging />
+        </div>
+        <div className={style.energy_icon}>
+          <BoltIcon />
           <span>Automation</span>
-        </nav>
-        <nav>
-          <MdFilterList />
+        </div>
+        <div className={style.filter_icon}>
+          <BiFilter className={style.filterIcon} />
           <span>Filter</span>
-        </nav>
+        </div>
         <nav>
           <AccountCircleIcon
             sx={{
@@ -51,11 +49,11 @@ export default function Navbar() {
             }}
           />
         </nav>
-        <nav className={style.share_btn}>
+        <div className={style.share_btn}>
           <BsPersonFillAdd className={style.person_icon} />
           <span style={{ color: "rgb(87, 101, 126)" }}>Share</span>
-        </nav>
-        <TfiLayoutMenuSeparated />
+        </div>
+        <MoreHorizIcon sx={{ fontSize: "1.7rem" }} />
       </div>
     </div>
   );
