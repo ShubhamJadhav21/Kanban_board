@@ -1,0 +1,35 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.card {
+  width: 19rem;
+  height: 16vh;
+  border: 4 px solid black;
+  color: brown;
+  background-color: lightgreen;
+  margin-left: 2rem;
+  border-radius: 15px;
+  flex-direction: row;
+  
+}
+
+.heading {
+  margin-left: 1rem;
+  color: black;
+  font-size: 17px;
+}
+.top {
+  margin-top: 2rem;
+}
+
+.dot {
+  margin-left: 13rem;
+}
+.add {
+  margin-left: 1rem;
+}
+.bottom {
+  margin-top: 2.8rem;
+}
